@@ -15,7 +15,7 @@ module OmniAuth
       }
 
       uid do
-        access_token.params['xoauth_yahoo_guid']
+        raw_info['sub']
       end
 
       info do
